@@ -1,0 +1,18 @@
+* "simulator" "HSPICE" 
+* "version" "D-2010.03-SP1 32-BIT"
+* "format" "HSP"
+* "rundate" "23:48:50 05/17/2017 "
+* "netlist" "d:\university\term 4\electronics principles & lab\dr.fakhar zade\lab\exp6\ali codes\class_a.sp "
+* "runtitle" "class_a"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ 1 =   9.2209        
++ 2 =   8.4265        
++ 100 =  12.0000        
++ in =   0.            
++ out =   0.            
+***   END: Saved Operating Point ***                     

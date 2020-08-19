@@ -1,0 +1,6 @@
+$DATA1 SOURCE='HSPICE' VERSION='D-2010.03-SP1 32-BIT'
+.TITLE '************6-2'
+ pl               ptot             vo               vin               
+ ic1              temper           alter#            
+  5.779e-02          1.2712           2.4039           2.8445         
+  4.873e-02         25.0000        1                 
