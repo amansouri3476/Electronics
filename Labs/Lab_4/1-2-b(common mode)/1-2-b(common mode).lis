@@ -1,0 +1,218 @@
+ ****** HSPICE -- D-2010.03-SP1 32-BIT (May 26 2010) winnt ******               
+  Copyright (C) 2010 Synopsys, Inc. All Rights Reserved.                        
+  Unpublished-rights reserved under US copyright laws.
+  This program is protected by law and is subject to the 
+  terms and conditions of the license agreement from Synopsys.
+  Use of this program is your acceptance to be bound by the 
+  license agreement. HSPICE is the trademark of Synopsys, Inc.
+  Input File: d:\university\term 4\electronics principles & lab\dr.fakhar zade\l
+  lic:  
+  lic: FLEXlm: v8.5b 
+  lic: USER:   Amin                 HOSTNAME: DESKTOP-1VFM22V 
+  lic: HOSTID: "708bcd0821f7 484520c021d1 484520c021cd 484520c021ce" PID:      2
+ 7
+  lic: Using FLEXlm license file: 
+  lic: 27000@elena 
+  lic: Checkout 1 hspice 
+  lic: License/Maintenance for hspice will expire on 31-dec-2020/2007.9 
+  lic: NODE LOCKED license on hostid "708bcd0821f7 484520c021d1 484520c021cd 484
+ 5
+  lic:   
+ Init: read install configuration file: C:\synopsys\Hspice_D-2010.03-SP1\meta.cfg
+1****** HSPICE -- D-2010.03-SP1 32-BIT (May 26 2010) winnt ******               
+ ******  
+ *************** 2-1-a-differential mode
+
+  ******  bjt   model parameters tnom=  25.000 temp=  25.000 *****
+
+ ************************************************************************
+ *** bjt model parameters   model name:   0:mynpn    model type:npn   ***
+ ************************************************************************
+
+     names  values   units     names  values   units     names  values   units
+     -----  ------   -----     -----  ------   -----     -----  ------   -----
+
+   1*** basic dc parameters ***
+    level=   1.00                bf= 250.00                br=   1.00         
+      brs=   0.                bulk=  gnd                  is=   1.00f amps   
+      iss=   0.    amps          nf=   1.00                nr=   1.00         
+       ns=   1.00               ibe=   0.    amps         ibc=   0.    amps   
+     subs=   1.00             expli=   0.    amps   
+
+   2*** low current beta degradation effect parameters ***
+      isc=   0.    amps         ise=   0.    amps          nc=   2.00         
+       ne=   1.50         
+
+   3*** base width modulation parameters ***
+      vaf= 100.00  volts        var=   0.    volts  
+
+   4*** high current beta degradation effect parameters ***
+      ikf=   0.    amps         nkf= 500.00m              ikr=   0.    amps   
+
+   5*** parasitic resistor parameters ***
+      irb=   0.    amps          rb=   0.    ohms         rbm=   0.    ohms   
+       re=   0.    ohms          rc=   0.    ohms         rcc=   0.    ohms   
+       vo=   0.    volts      gamma=   0.           
+
+   6*** junction capacitor parameters ***
+     cbcp=   0.    farad       cbep=   0.    farad       ccsp=   0.    farad  
+      cjc=   0.    farad        cje=   0.    farad        cjs=   0.    farad  
+       fc= 500.00m              mjc= 330.00m              mje= 330.00m        
+      mjs= 500.00m              vjc= 750.00m volts        vje= 750.00m volts  
+      vjs= 750.00m volts       xcjc=   1.00               qco=   0.    coul   
+
+   7*** transit time parameters ***
+      itf=   0.    amps         ptf=   0.    deg k         tf=   0.    secs   
+       tr=   0.    secs         vtf=   0.                 xtf=   0.           
+
+   8*** temperature compensation parameters ***
+     tlev=   0.               tlevc=   0.                tre1=   0.    /deg   
+     tre2=   0.    /deg2       trb1=   0.    /deg        trc1=   0.    /deg   
+     trb2=   0.    /deg2       trm1=   0.    /deg         xtb=   0.           
+     trm2=   0.    /deg2        xti=   3.00               cte=   0.    /deg   
+      ctc=   0.    /deg         cts=   0.    /deg        trc2=   0.    /deg2  
+     tref=  25.00   deg c       bex=   2.42              bexv=   1.90         
+
+   9*** noise parameters ***
+       kf=   0.                  af=   1.00         
+  **info** (d:\university\term 4\electronics principles & lab\dr.fakhar zade\lab\exp4\1-2-b(common mode)\1-2-b(common mode).sp:5) DC voltage reset to initial transient source value              in source        0:vin                 new dc=  0.0000D+00
+  **warning** (d:\university\term 4\electronics principles & lab\dr.fakhar zade\lab\exp4\1-2-b(common mode)\1-2-b(common mode).sp:15) Value of resistance r6 defined is limited to   1.000E-05 (RESMIN). Please modify RESMIN to incorporate resistances.
+ 
+      
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2         
+1****** HSPICE -- D-2010.03-SP1 32-BIT (May 26 2010) winnt ******               
+ ******  
+ *************** 2-1-a-differential mode
+
+  ******  operating point information tnom=  25.000 temp=  25.000 *****
+ ***** operating point status is all       simulation time is     0.     
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:1       =   2.8822  0:2       =   2.8822  0:3       = -42.2244p
+ +0:4       =-693.4741m 0:5       =-747.9871m 0:6       =-693.4741m
+ +0:8       = -42.2244p 0:100     =   5.0000  0:200     =  -5.0000 
+
+
+ ****  voltage sources
+
+ subckt                                   
+ element  0:vcc      0:vee      0:vin     
+  volts      5.0000    -5.0000     0.     
+  current   -1.0860m    1.0903m   -4.2224u
+  power      5.4302m    5.4513m    0.     
+
+     total voltage source power dissipation=   10.8815m       watts
+
+
+
+ **** resistors
+
+ subckt                                                                    
+ element  0:r1       0:r2       0:r3       0:r4       0:r5       0:r6      
+  r value    3.9000k    3.9000k  100.0000   100.0000     3.9000k   10.0000u
+  v drop     2.1178     2.1178    54.5130m   54.5130m    4.2520   -42.2244p
+  current  543.0186u  543.0186u  545.1299u  545.1299u    1.0903m   -4.2224u
+  power      1.1500m    1.1500m   29.7167u   29.7167u    4.6358m  178.2903a
+
+
+ **** bipolar junction transistors
+
+
+ subckt                        
+ element  0:q1       0:q2      
+ model    0:mynpn    0:mynpn   
+  ib         2.1112u    2.1112u
+  ic       543.0186u  543.0186u
+  vbe      693.4741m  693.4741m
+  vce        3.5757     3.5757 
+  vbc       -2.8822    -2.8822 
+  vs        -2.8822    -2.8822 
+  power      1.9431m    1.9431m
+  betad    257.2056   257.2056 
+  gm        21.1306m   21.1306m
+  rpi       12.1692k   12.1692k
+  rx         0.         0.     
+  ro       189.4635k  189.4635k
+  cpi        0.         0.     
+  cmu        0.         0.     
+  cbx        0.         0.     
+  ccs        0.         0.     
+  betaac   257.1413   257.1413 
+  ft       3.363e+12  3.363e+12
+
+
+
+ ******  
+ *************** 2-1-a-differential mode
+
+  ******  ac analysis tnom=  25.000 temp=  25.000 *****
+x
+
+        freq        rin    
+                           
+    1.00000k    966.0541k  
+    3.16228k    966.0541k  
+   10.00000k    966.0541k  
+   31.62278k    966.0541k  
+  100.00000k    966.0541k  
+y
+x
+
+        freq       gain    
+                           
+    1.00000k    488.5429m  
+    3.16228k    488.5429m  
+   10.00000k    488.5429m  
+   31.62278k    488.5429m  
+  100.00000k    488.5429m  
+y
+
+          ***** job concluded
+1****** HSPICE -- D-2010.03-SP1 32-BIT (May 26 2010) winnt ******               
+ ******  
+ *************** 2-1-a-differential mode
+
+  ******  job statistics summary tnom=  25.000 temp=  25.000 *****
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count                  :     1
+  Available CPU Count                         :     8
+  Actual Model Evaluation(Load) Threads Count :     1
+  Actual Solver Threads Count                 :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =      11 # elements   =      12
+  # resistors   =       6 # capacitors =       0 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       4
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       2
+  # jfets       =       0 # mosfets    =       0 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.00           1           9
+  ac analysis        0.03           5           5
+  transient          0.06      600001         738         369 rev=        40
+  readin             0.03
+  errchk             0.00
+  setup              0.02
+  output             0.00
+
+
+           total memory used          168  kbytes
+           total cpu time            0.17 seconds
+           total elapsed time        0.42 seconds
+           job started at     18:27:08 04/16/2017
+           job ended   at     18:27:09 04/16/2017
+
+
+  lic: Release hspice token(s) 

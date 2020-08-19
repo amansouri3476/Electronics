@@ -1,0 +1,23 @@
+* "simulator" "HSPICE" 
+* "version" "D-2010.03-SP1 32-BIT"
+* "format" "HSP"
+* "rundate" "19:57:56 04/30/2017 "
+* "netlist" "d:\university\term 4\electronics principles & lab\dr.fakhar zade\lab\exp5\q1.sp "
+* "runtitle" "q1"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ 1 =   0.            
++ 2 =   0.            
++ 3 =   1.6417        
++ 4 =   8.1067        
++ 5 = 857.8990m       
++ 6 =   1.6778        
++ 7 =   8.1153        
++ 8 = 894.1122m       
++ 9 =   0.            
++ 100 =  10.0000        
+***   END: Saved Operating Point ***                     

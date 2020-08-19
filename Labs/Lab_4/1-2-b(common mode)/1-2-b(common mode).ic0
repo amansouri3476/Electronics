@@ -1,0 +1,22 @@
+* "simulator" "HSPICE" 
+* "version" "D-2010.03-SP1 32-BIT"
+* "format" "HSP"
+* "rundate" "18:27:08 04/16/2017 "
+* "netlist" "d:\university\term 4\electronics principles & lab\dr.fakhar zade\lab\exp4\1-2-b(common mode)\1-2-b(common mode).sp "
+* "runtitle" "*************** 2-1-a-differential mode"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ 1 =   2.8822        
++ 2 =   2.8822        
++ 3 = -42.2244p       
++ 4 =-693.4741m       
++ 5 =-747.9871m       
++ 6 =-693.4741m       
++ 8 = -42.2244p       
++ 100 =   5.0000        
++ 200 =  -5.0000        
+***   END: Saved Operating Point ***                     
