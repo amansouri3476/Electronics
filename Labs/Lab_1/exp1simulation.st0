@@ -1,0 +1,68 @@
+***** HSPICE -- D-2010.03-SP1 32-BIT (May 26 2010) winnt ******
+ Input File: d:\amin\university\term 4\electronics principles & lab\dr.fakhar za
+ lic:
+ lic: FLEXlm: v8.5b
+ lic: USER:   Amin                 HOSTNAME: DESKTOP-1VFM22V
+ lic: HOSTID: "708bcd0821f7 484520c021d1 00ff9d66de49 484520c021cd 484520c021ce"
+ lic: Using FLEXlm license file:
+ lic: 27000@elena
+ lic: Checkout 1 hspice
+ lic: License/Maintenance for hspice will expire on 31-dec-2020/2007.9
+ lic: NODE LOCKED license on hostid "708bcd0821f7 484520c021d1 00ff9d66de49 4845
+ lic:
+ init: begin read circuit files,  cpu clock=  3.02E-01
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\behave\
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\AD\
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\XILINX\
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\TLINE\
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\TI\
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\SIGNET\
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\PCI\
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\LIN_TECH\
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\FET\
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\DIO\
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\COMLINE\
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\BURR_BRN\
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\BJT\
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\behave\
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\AD\
+       option post     =     2.00
+       option runlvl
+ init: end read circuit files,  cpu clock=  3.38E-01 memory=    152 kb
+ init: begin check errors,  cpu clock=  3.38E-01
+ init: end check errors,  cpu clock=  3.45E-01 memory=    154 kb
+ init: begin setup matrix, pivot=     0 cpu clock=  3.45E-01
+       establish matrix -- done,  cpu clock=  3.55E-01 memory=    156 kb
+       re-order matrix -- done,  cpu clock=  3.59E-01 memory=    156 kb
+ init: end setup matrix,  cpu clock=  3.62E-01 memory=    167 kb
+ dcop: begin dcop,  cpu clock=  3.67E-01
+ dcop: end dcop,  cpu clock=  3.72E-01 memory=    167 kb  tot_iter=       8
+ output: d:\amin\university\term 4\electronics principles & lab\dr.fakhar zade\l
+ sweep: ac ac0    begin, #sweeps=  81 cpu clock=  3.80E-01
+ ac: frequency=    1.06E+03
+ ac: frequency=    1.58E+03
+ ac: frequency=    2.51E+03
+ ac: frequency=    3.98E+03
+ ac: frequency=    6.31E+03
+ ac: frequency=    1.00E+04
+ ac: frequency=    1.58E+04
+ ac: frequency=    2.51E+04
+ ac: frequency=    3.98E+04
+ ac: frequency=    6.31E+04
+ ac: frequency=    1.00E+05
+ sweep: ac ac0    end,  cpu clock=  4.15E-01 memory=    171 kb
+ output: d:\amin\university\term 4\electronics principles & lab\dr.fakhar zade\l
+ sweep: tran tran0    begin, stop_t=  1.00E-02 #sweeps=**** cpu clock=  4.23E-01
+ tran: time= 1.0000E-03 tot_iter=      68 conv_iter=      31 cpu clock= 4.26E-01
+ tran: time= 2.0000E-03 tot_iter=     118 conv_iter=      53 cpu clock= 4.28E-01
+ tran: time= 3.0000E-03 tot_iter=     168 conv_iter=      75 cpu clock= 4.31E-01
+ tran: time= 4.0000E-03 tot_iter=     218 conv_iter=      97 cpu clock= 4.33E-01
+ tran: time= 5.0000E-03 tot_iter=     268 conv_iter=     119 cpu clock= 4.38E-01
+ tran: time= 6.0000E-03 tot_iter=     318 conv_iter=     141 cpu clock= 4.44E-01
+ tran: time= 7.0000E-03 tot_iter=     368 conv_iter=     163 cpu clock= 4.49E-01
+ tran: time= 8.0000E-03 tot_iter=     418 conv_iter=     185 cpu clock= 4.53E-01
+ tran: time= 9.0000E-03 tot_iter=     468 conv_iter=     207 cpu clock= 4.58E-01
+ tran: time= 1.0000E-02 tot_iter=     518 conv_iter=     229 cpu clock= 4.63E-01
+ sweep: tran tran0    end,  cpu clock=  4.67E-01 memory=    168 kb
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)
